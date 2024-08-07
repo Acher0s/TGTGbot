@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 class TGTG_DB:
     def __init__(self):
         load_dotenv()
-        self.db_name = f"{os.getenv("DB_NAME")}.db"
+        self.db_name = f"{os.getenv('DB_NAME')}.db"
         self.create_db()
 
     def create_db(self):
